@@ -1,0 +1,16 @@
+guli-ware/HELP.md
+target/
+
+### IntelliJ IDEA ###
+.idea
+*.iws
+*.iml
+*.ipr
+
+**/target
+**/mvnw.cmd
+**/mvnw
+**/.mvn
+**/*.iml
+**/HELP.md
+
