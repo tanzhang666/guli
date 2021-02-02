@@ -1,0 +1,17 @@
+1.spring alibaba nacos注册中心
+2.spring cloud openfeign调用中心
+3.spring alibaba nacos配置中心
+步骤：
+引入spring-cloud-starter-alibaba-nacos-config依赖
+创建bootstrap配置文件
+配置项：
+spring.application.name
+spring.cloud.nacos.congig.server-addr
+命名空间：
+隔离环境：根据不同的环境dev test prod等
+配置项：spring.cloud.nacos.config.namespace=命名空间的唯一id
+隔离微服务:根据不同的微服务创建不同的命名空间
+配置集：所有配置的集合 相当于一个配置文件
+配置集id:相当于文件名
+配置组：spring.cloud.nacos.config.group
+此项目中使用命名空间区分服务和组来区分不同环境

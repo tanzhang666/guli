@@ -1,0 +1,20 @@
+spring:
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://192.168.33.10:3306/gulimall_pms
+    username: root
+    password: root
+  cloud:
+    nacos:
+      discovery:
+        server-addr: localhsot:8848
+  application:
+    name: cloud-product
+#配置mybatis plus映射文件的地址 classpath加*表示不止扫描本模块类路径下的 而且扫描所有依赖 classpath*:mapper/**/*.xml
+mybatis-plus:
+  mapper-locations: classpath:mapper/**/*.xml
+  global-config:
+    db-config:
+      id-type: auto #主键自增
+server:
+  port: 10000

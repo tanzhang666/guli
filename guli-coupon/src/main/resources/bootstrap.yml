@@ -1,0 +1,9 @@
+spring:
+  application:
+    name: guli-coupon
+  cloud:
+    nacos:
+      config:
+        server-addr: localhost:8848
+#        可配置配置文件的命名空间 用于环境的隔离
+        namespace: d09512f0-01f9-4cea-b109-b2917f13838d

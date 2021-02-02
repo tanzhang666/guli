@@ -1,0 +1,7 @@
+spring:
+  application:
+    name: guli-ware
+  cloud:
+    nacos:
+      config:
+        server-addr: localhost:8848
